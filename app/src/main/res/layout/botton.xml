@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/id_tab_weixin"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/id_tab_weixin_img"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:background="#3FB5B5"
+            android:clickable="false"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/rockets" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#9A111111"
+            android:clickable="false"
+            android:text="              微信"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_tab_frds"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/id_tab_frds_img"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:background="#3FB5B5"
+            android:clickable="false"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/lakers" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:background="#9A111111"
+            android:text="              朋友"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_tab_contact"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/id_tab_contact_img"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:background="#3FB5B5"
+
+            android:clickable="false"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/cavalier" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#9A111111"
+            android:clickable="false"
+            android:text="            通讯录"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_tab_settings"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/id_tab_settings_img"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:background="#3FB5B5"
+            android:clickable="false"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/blizard" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#9A111111"
+            android:clickable="false"
+            android:text="              设置"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>
