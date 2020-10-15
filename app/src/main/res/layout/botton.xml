@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:background="#9A111111"
             android:clickable="false"
-            android:text="              微信"
+            android:text="              新闻"
             android:textColor="@android:color/holo_green_light"
             android:textSize="12sp" />
     </LinearLayout>
@@ -53,9 +53,9 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:clickable="false"
             android:background="#9A111111"
-            android:text="              朋友"
+            android:clickable="false"
+            android:text="              赛程"
             android:textColor="@android:color/holo_green_light"
             android:textSize="12sp" />
     </LinearLayout>
@@ -83,7 +83,7 @@
             android:layout_height="wrap_content"
             android:background="#9A111111"
             android:clickable="false"
-            android:text="            通讯录"
+            android:text="             数据"
             android:textColor="@android:color/holo_green_light"
             android:textSize="12sp" />
     </LinearLayout>
@@ -110,7 +110,7 @@
             android:layout_height="wrap_content"
             android:background="#9A111111"
             android:clickable="false"
-            android:text="              设置"
+            android:text="              花边"
             android:textColor="@android:color/holo_green_light"
             android:textSize="12sp" />
     </LinearLayout>

@@ -35,7 +35,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        if (getSupportActionBar() != null){
+            getSupportActionBar().hide();
+        }
         setContentView(R.layout.activity_main);
         initView();
         initFragment();
@@ -54,15 +56,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void initView()
     {
-        mTabWeiXin=(LinearLayout) findViewById(R.id.id_tab_weixin);
-        mTabFrd=(LinearLayout) findViewById(R.id.id_tab_frds);
-        mTabAddress=(LinearLayout) findViewById(R.id.id_tab_contact);
-        mTabSettings=(LinearLayout) findViewById(R.id.id_tab_settings);
+        mTabWeiXin= findViewById(R.id.id_tab_weixin);
+        mTabFrd= findViewById(R.id.id_tab_frds);
+        mTabAddress= findViewById(R.id.id_tab_contact);
+        mTabSettings= findViewById(R.id.id_tab_settings);
 
-        mImgWeixin = (ImageButton) findViewById(R.id.id_tab_weixin_img);
-        mImgFrd= (ImageButton) findViewById(R.id.id_tab_frds_img);
-        mImgAddress= (ImageButton) findViewById(R.id.id_tab_contact_img);
-        mImgSettings=(ImageButton) findViewById(R.id.id_tab_settings_img);
+        mImgWeixin =  findViewById(R.id.id_tab_weixin_img);
+        mImgFrd=  findViewById(R.id.id_tab_frds_img);
+        mImgAddress=  findViewById(R.id.id_tab_contact_img);
+        mImgSettings= findViewById(R.id.id_tab_settings_img);
     }
 
     private void initEvent(){
