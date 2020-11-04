@@ -1,12 +1,19 @@
 package com.example.wechat;
 
+import android.content.Context;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -24,6 +31,10 @@ public class weixinfragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
+    private RecyclerView recyclerView;
+    private List<String> list;
+    private Context context;
+    private  myadapter myadapter;
     public weixinfragment() {
         // Required empty public constructor
     }
@@ -59,6 +70,34 @@ public class weixinfragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.tab_01, container, false);
+        View view=inflater.inflate(R.layout.tab_01,container,false);
+        context=view.getContext();
+        recyclerView=view.findViewById(R.id.recyclerview);
+        list=new ArrayList<String>();
+        initData();
+        LinearLayoutManager manager=new LinearLayoutManager(context);
+        manager.setOrientation(LinearLayoutManager.VERTICAL);
+
+        myadapter = new myadapter(list,context);
+
+        recyclerView.setAdapter(myadapter);
+        recyclerView.setLayoutManager(manager);
+        recyclerView.addItemDecoration(new DividerItemDecoration(context,LinearLayoutManager.VERTICAL));
+
+
+        return view;
+    }
+    private void initData(){
+        list.add("HOUSTON ROCKETS");
+        list.add("LOSANGEL LAKERS");
+        list.add("DALAS MAV");
+        list.add("LOSANGEL CLIPPERS");
+        list.add("DENVER NUGGETS");
+        list.add("PORTLAND BLIZZARDS");
+        list.add("GOLDEN STATE WORRIERS");
+        list.add("CHICAGO BULLS");
+        list.add("BROOKLIN NETS ");
+        list.add("TORONTO RAPATORS");
     }
 }
+
